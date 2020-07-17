@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11(a)</title>
+</head>
+<body>
+    <script>
+        document.write("open the console for output");
+        let marks=prompt("enter the marks  out of 60 i will tell you the grade");
+        console.log(marks);
+        var grade;
+         if(marks > 50 && marks < 60)
+       {
+            
+             grade='A';
+        }
+        
+        else if(marks >40 && marks <=50)
+        {
+           
+            grade='B';
+        }
+        else if(marks >30 && marks <=40)
+        {
+           
+           grade='C'
+        }
+        else if(marks>20 && marks<=30)
+        {
+           
+            grade='D';
+        }
+        else
+        {
+           
+           grade='fail';
+        }
+        console.log("marks are "+marks+"and the grade is "+grade+"");
+    </script>
+</body>
+</html>
