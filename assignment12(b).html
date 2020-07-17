@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11(b)</title>
+</head>
+<body>
+    <script>
+        let marks=prompt("enter teh marks");
+        console.log(marks);
+        var ch;
+        ch=prompt("enter the choice");
+
+        switch(ch)
+        {
+            case 'A':
+            if(marks > 50 && marks < 60)
+            {
+            console.log("your marks are"+marks+"and grade is A");
+            }
+            break;
+            case 'B':
+            if(marks >40 && marks <=50)
+            {
+            console.log("your marks are"+marks+"and grade is B");
+            }
+            break;
+            case 'C':
+           if(marks >30 && marks <=40)
+           {
+            console.log("your marks are"+marks+"and grade is C");
+           }
+            break;
+            case 'D':
+            if(marks>20 && marks<30)
+            {
+                console.log("your marks are"+marks+"and grade is D");
+            }
+            break;
+            default:
+            console.log("FAIL");
+            break;
+        }
+
+        
+    </script>
+</body>
+</html>
