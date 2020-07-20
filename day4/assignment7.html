@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>to check which number is prime number</h1>
+    <h2>open the console for the output purpose</h2>
+    <script>
+        let num=prompt("enter the number to check until that given number");
+        console.log(num);
+        for(var count=2;count<=num;count++)
+        {
+            var notprime=false;
+        for(let i=2;i<=count;i++)
+        {
+            if(count%i==0 && i!=count)
+            {  
+                notprime=true;           
+            }
+        }
+            if(notprime==false)
+            {
+                console.log(count);
+            }
+           
+        }
+    </script>
+</body>
+</html>

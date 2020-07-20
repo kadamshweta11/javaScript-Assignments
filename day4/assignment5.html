@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>assignment 5</h1>
+    <h2>marketing sales department</h2>
+    <script>
+        let sales=prompt("enter your sales");
+        var reward;
+        if(sales>=0 && sales<=5000)
+        {
+            reward=sales*0.02;
+            console.log(`sales from 0-5000=${reward}`);
+        }
+        else if(sales>=5001 && sales<=10000)
+        {
+            reward=sales*0.05;
+            console.log(`sales from 5001-10000=${reward}`);
+        }
+        else if(sales>=10001 && sales<=20000)
+        {
+            reward=sales*0.07;
+            console.log(`sales from 10001-20000=${reward}`);
+        }
+        else if(sales>20000)
+        {
+            reward=sales*0.1;
+            console.log(`sales from 20001-above=${reward}`);
+        }
+        else{
+            console.log("you entered wrong value");
+        }
+        
+    </script>
+</body>
+</html>

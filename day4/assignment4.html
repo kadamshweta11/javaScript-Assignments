@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body bgcolor="lightBlue">
+    <h1>Assignment 4</h1>
+    <h2> lets Calculator with lets upgrade</h2>
+    <script>
+        document.write("please open console for your result");
+        let result;
+         var num1,num2,ans;
+         var ch;
+        do{
+             console.log("ADDITION(+)");
+             console.log("SUBSTRACTION(-)");
+             console.log("DIVISION(/)");
+             console.log("PERCENTAGE(%)");
+             console.log("MULTIPLICATION(*)");
+             console.log("SQUAREROOT(sqrt)");
+             ch=prompt("enter your choice");
+             console.log(ch);
+        
+        
+         switch(ch)
+         {
+             case '+':
+             num1=Number(prompt("enter the number 1"));
+            console.log(num1);
+            num2=Number(prompt("enter the number 2"));
+            console.log(num2);
+            result=num1+num2;
+                    console.log(`addition is ${result}`);
+                break;
+            case '-':
+             num1=Number(prompt("enter the number 1"));
+            console.log(num1);
+            num2=Number(prompt("enter the number 2"));
+            console.log(num2);
+            result=num2-num1;
+                    console.log(`substraction is=${result}`);
+                 break;
+            case '/':
+             num1=Number(prompt("enter the number 1"));
+            console.log(num1);
+            num2=Number(prompt("enter the number 2"));
+            console.log(num2);
+            result=num1/num2;
+                    console.log(`dividion is=${result}`);
+                 break;
+            case '%':
+             num1=Number(prompt("enter the number 1"));
+            console.log(num1);
+            num2=Number(prompt("enter the number 2"));
+            console.log(num2);
+            result=(num1/num2)*100;
+                    console.log(`percentage is=${result}`);
+                break;
+            case '*':
+             num1=Number(prompt("enter the number 1"));
+            console.log(num1);
+            num2=Number(prompt("enter the number 2"));
+            console.log(num2);
+            result=num1*num2;
+                    console.log(`multiplication is=${result}`);
+                break;
+            case 'sq':
+            
+            num1=Number(prompt("enter the number 1"));
+            console.log(num1);
+            num2=Number(prompt("enter the number 2"));
+            console.log(num2);
+            console.log(Math.sqrt(num1)+" "+Math.sqrt(num2));
+            break;
+            default:
+                    console.log("please enter valid operation");       
+         }
+         ans=prompt("do you want to continue");
+         }while(ans==1);
+    </script>
+</body>
+</html>

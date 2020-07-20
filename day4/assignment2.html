@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>
+        Assignment 2
+    </h1>
+    <script>
+        const student={
+            name:"helsinki",
+            age:24,
+            projects:{
+                diceGame:"Two player dice game using JavaScript",
+            }
+        }
+        const{name,age,projects:{diceGame}}=student;
+        console.log(`Name=${name}\nAge=${age}\nProject=${diceGame}`);
+    </script>
+</body>
+</html>
