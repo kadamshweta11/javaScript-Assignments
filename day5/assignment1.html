@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>Assignment 1</h1>
+    <h2>open console for output purpose</h2>
+    <script>
+        var arr=[];
+        var num=prompt("enter the  number of elements input?");
+        for(var i=0;i<num;i++)
+        {
+         arr[i]=prompt("enter the positive number?");
+        }
+       
+        var no=arr.map((el)=>el);
+        console.log("array of positive number are"+no);
+        let odd=arr.filter(function(el)
+        {
+            if(el%2!=0) return el;
+        })
+        console.log(`array of odd nos are ${odd}`);
+        let cube=odd.map(el=>el**3);
+        console.log(`array of cube of numbers are ${cube}`);
+    </script>
+</body>
+</html>

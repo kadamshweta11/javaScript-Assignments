@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>Assignment 2</h1>
+    <h2>inheritance in javascript</h2>
+    <h3>open console for output purpose</h3>
+    <script>
+        class User
+        {
+            constructor(name,age,email)
+            {
+                this.name=name;
+                this.age=age;
+                this.email=email;
+                this.courses=[];
+            }
+            login(){
+                console.log(`${this.name} has logged in successfully`);
+                return this;
+            }
+            logout()
+            {
+                console.log(`${this.name} has logged out successfully`);
+                return this;
+            }
+           
+        }
+        
+        class Moderator extends User
+        {
+            constructor(addcoins,removecoins,name,age,email)
+            {
+                super(name,age,email);
+                this.addcoins=addcoins;
+                this.removecoins=removecoins;
+            }
+            addcoins()
+            {
+                addcoins++;
+                console.log(`${this.name} has sucessfully added ${this.addcoins} coins`);
+                return this;
+            }
+            
+            removecoins()
+            {
+                removecoins--;
+                console.log(`${this.name} has sucessfully removed ${this.addcoins} coins`);
+                return this;
+            }
+        }
+        
+       
+    class Admin extends Moderator
+    {
+        
+        addcourse(user,course)
+        {
+            user1.courses.push(course);
+            console.log(user1);
+        }
+        deletecourse(user,course)
+        {
+            user1.courses.pop(course);
+            console.log(user1);
+        }
+    }
+    let user1=new User(`julia`,40,`julia@gmail.com`);
+            let user2=new User(`vijay`,20,`vijays@gmail.com`);
+            user1.login().logout();
+            user2.login().logout();
+            let mod=new Moderator(0,5,user1);
+    let ad=new Admin(user1);
+    let del=new Admin(`puja`,23,`puja@gmail.com`);
+    let users=[user1,user2,mod,ad];
+    users.forEach(element=>{
+        console.log(element);
+    });
+    ad.addcourse(user1,`python`);
+    ad.addcourse(user1,`javascript`);
+    ad.addcourse(user2,`ruby`);
+    del.deletecourse(user1,`python`);
+    
+    
+    </script>
+</body>
+</html>
