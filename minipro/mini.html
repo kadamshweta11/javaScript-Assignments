@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+    <body id="bdy">
+        <h1 style="text-align: center;color: blue; font-size: 50px;">Random quote generator</h1>
+        <div id= "quoteDisp" style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 25px; margin-bottom: 40px; margin-top: 10px;font-style: italic;color: red;background-color:yellow;">
+    
+        </div>
+        <div style="text-align: center;">
+            <button onclick="newQuote();changeCol()" style="background-color: green;color:antiquewhite; padding: 8px 20px;">english Quote</button>
+            <button onclick="newQuote2();changeCol2()" style="background-color:brown;color:antiquewhite; padding: 8px 20px;">Marathi Quote</button>
+        </div>
+        <script>
+            document.write("click green button  for english new quote\n");
+            document.write("\nclick brow button  fo  marathi quotes");
+            var quotes = ['Be yourself, everyone else is already taken','Two things are infinite: the universe and human stupidity; and Im not sure about the universe','You only live once, but if you do it right, once is enough.','Be the change that you wish to see in the world.','In three words I can sum up everything I have learned about life: it goes on.',"If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals","A friend is someone who knows all about you and still loves you.","Always forgive your enemies; nothing annoys them so much.","Live as if you were to die tomorrow. Learn as if you were to live forever.","Without music, life would be a mistake."]
+    
+            function newQuote()
+            {
+                var ranNum = Math.floor(Math.random() * (quotes.length));
+                document.getElementById('quoteDisp').innerHTML = quotes[ranNum];
+            }
+            function changeCol()
+            {
+                document.body.style.background = 'grey';
+            }
+        var quotes2=['कधी कधी हक्क मागून मिळत नाहीत, ते मिळवावे लागतात.','सर्वच प्रश्न सोडवून सूटत नाहीत, काही सोडून दिले की आपोआप सुटतात.','कुणाच्याही दुःखाचा अनादर करू नये. प्रत्येकजण आपापल्या संकटांशी झगडत','कुणाच्याही दुःखाचा अनादर करू नये. प्रत्येकजण आपापल्या संकटांशी झगडत','असतो.. काहींना आपल्या वेदना लपवता येतात, काहींना नाही.','आयुष्यातले काही क्षण हे एकांतात घालवत जा, सर्व प्रश्नांची उत्तरं तिथेच मिळतील कारण, तिथेच आपला संवाद फक्त आणि फक्त स्वतःशी होतो.']
+function newQuote2()
+            {
+                var ranNum = Math.floor(Math.random() * (quotes2.length));
+                document.getElementById('quoteDisp').innerHTML = quotes2[ranNum];
+            }
+            function changeCol2()
+            {
+                document.body.style.background = 'grey';
+            }
+        </script>
+    </body>
+
+</html>
